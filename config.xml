@@ -85,51 +85,33 @@
     -->
 
     <!-- Define app icon for each platform. -->
-<splash src="screen.png" />
-    <platform name="android">
-        <icon density="ldpi" src="logoville.png" />
-        <icon density="mdpi" src="logoville.png" />
-        <icon density="hdpi" src="logoville.png" />
-        <icon density="xhdpi" src="logoville.png" />
-        <icon density="xxhdpi" src="logoville.png" />
-        <icon density="xxxhdpi" src="logoville.png" />
-    <splash src="ldpi.png" platform="android" qualifier="ldpi" />
-<splash src="screen.png" platform="android" qualifier="mdpi" />
-<splash src="screen.png" platform="android" qualifier="hdpi" />
-<splash src="screen.png" platform="android" qualifier="xhdpi" />
-<splash src="screen.png" platform="android" qualifier="fr-xhdpi" />
-<splash src="screen.png" platform="android" qualifier="port-xxhdpi" />
-<splash src="screen.png" platform="android" qualifier="land-xxhdpi" />
+    <icon src="logoville.png" />
+    <icon src="logoville.png"   gap:platform="android"    gap:qualifier="ldpi" />
+    <icon src="logoville.png"   gap:platform="android"    gap:qualifier="mdpi" />
+    <icon src="logoville.png"   gap:platform="android"    gap:qualifier="hdpi" />
+    <icon src="logoville.png"  gap:platform="android"    gap:qualifier="xhdpi" />
+    <icon src="logoville.png"     gap:platform="blackberry" />
+    <icon src="logoville.png"     gap:platform="blackberry" gap:state="hover"/>
+    <icon src="logoville.png"            gap:platform="ios"        width="57" height="57" />
+    <icon src="logoville.png"            gap:platform="ios"        width="72" height="72" />
+    <icon src="logoville.png"         gap:platform="ios"        width="114" height="114" />
+    <icon src="logoville.png"         gap:platform="ios"        width="144" height="144" />
+    <icon src="logoville.png"          gap:platform="webos" />
+    <icon src="logoville.png"  gap:platform="winphone" />
+    <icon src="logoville.png" gap:platform="winphone"   gap:role="background" />
 
-    </platform>
-    <platform name="ios">
-        <icon height="57" platform="ios" src="logoville.png" width="57" />
-        <icon height="114" platform="ios" src="logoville.png" width="114" />
-        <icon height="40" platform="ios" src="logoville.png" width="40" />
-        <icon height="80" platform="ios" src="logoville.png" width="80" />
-        <icon height="50" platform="ios" src="logoville.png" width="50" />
-        <icon height="100" platform="ios" src="logoville.png" width="100" />
-        <icon height="60" platform="ios" src="logoville.png" width="60" />
-        <icon height="120" platform="ios" src="logoville.png" width="120" />
-        <icon height="180" platform="ios" src="logoville.png" width="180" />
-        <icon height="72" platform="ios" src="logoville.png" width="72" />
-        <icon height="144" platform="ios" src="logoville.png" width="144" />
-        <icon height="76" platform="ios" src="logoville.png" width="76" />
-        <icon height="152" platform="ios" src="logoville.png" width="152" />
-        <icon height="29" platform="ios" src="logoville.png" width="29" />
-        <icon height="58" platform="ios" src="logoville.png" width="58" />
-        <icon height="87" platform="ios" src="logoville.png" width="87" />
-        <splash height="1136" platform="ios" src="screen.png" width="640" />
-        <splash height="1334" platform="ios" src="screen.png" width="750" />
-        <splash height="2208" platform="ios" src="screen.png" width="1242" />
-        <splash height="1242" platform="ios" src="screen.png" width="2208" />
-        <splash height="1536" platform="ios" src="screen.png" width="2048" />
-        <splash height="768" platform="ios" src="screen.png" width="1024" />
-        <splash height="2048" platform="ios" src="screen.png" width="1536" />
-        <splash height="1024" platform="ios" src="screen.png" width="768" />
-        <splash height="960" platform="ios" src="screen.png" width="640" />
-        <splash height="480" platform="ios" src="screen.png" width="320" />
-    </platform>
+    <!-- Define app splash screen for each platform. -->
+    <gap:splash src="screen.png"       gap:platform="android" gap:qualifier="port-ldpi" />
+    <gap:splash src="screen.png"       gap:platform="android" gap:qualifier="port-mdpi" />
+    <gap:splash src="screen.png"       gap:platform="android" gap:qualifier="port-hdpi" />
+    <gap:splash src="screen.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
+    <gap:splash src="screen.png"              gap:platform="blackberry" />
+    <gap:splash src="screen.png"         gap:platform="ios"     width="320" height="480" />
+    <gap:splash src="screen.png"      gap:platform="ios"     width="640" height="960" />
+    <gap:splash src="screen.png" gap:platform="ios"     width="640" height="1136" />
+    <gap:splash src="screen.png"           gap:platform="ios"     width="768" height="1024" />
+    <gap:splash src="screen.png"          gap:platform="ios"     width="1024" height="768" />
+    <gap:splash src="screen.png"      gap:platform="winphone" />
 
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
     <string>100</string>
