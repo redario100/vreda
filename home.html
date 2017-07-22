@@ -42,7 +42,7 @@ $( document ).ready(function() {
 $('#reda').hide();
 
         $('#reda').html(data);
-		$('#reda').fadeIn();
+		$('#reda').slidefadeIn();
 	 $('#jiji').hide();
 		
     },
@@ -70,7 +70,7 @@ function affiche1(q)
     {
 	$('#contentpage2').hide();
 	$('#contentpage2').html(data);
-	$('#contentpage2').fadeIn();
+	$('#contentpage2').slidefadeIn();
     $('#jiji').hide();
     },
     error: function()
@@ -97,7 +97,7 @@ function affiche11(q)
     {
 	$('#contentpagepromo').hide();
 	$('#contentpagepromo').html(data);
-	$('#contentpagepromo').fadeIn();
+	$('#contentpagepromo').slidefadeIn();
     $('#jiji').hide();
     },
     error: function()
@@ -348,7 +348,7 @@ $.ajax({
     success: function(data)
     {
 	$('#jiji').hide();
-	$('.pr'+h).fadeOut();
+	$('.pr'+h).slidefadeOut();
 	$('.pano').hide();
 $('.pano1').hide();
 affichepanier();
@@ -470,8 +470,8 @@ var top = offsets.top;
 setTimeout(function() {
 jQuery('#page3').animate({scrollTop: top+1000}, 10);
 }, 200); 
-$("#numero1").fadeIn();
-$("#numero2").fadeIn();
+$("#numero1").slidefadeIn();
+$("#numero2").slidefadeIn();
 
 
 }
@@ -486,7 +486,7 @@ setTimeout(function() {
 jQuery('#page3').animate({scrollTop: top+1000}, 10);
 }, 200); 
 $("#numero1").hide();
-$("#numero2").fadeIn();
+$("#numero2").slidefadeIn();
 }
 }
 
@@ -544,13 +544,13 @@ Votre Commande a été envoyé, vous allez recevoir une réponse dans quelques i
 <div data-role="panel" id="left-panel"  data-position-fixed="true" > <!--data-display="overlay"-->
 <ul data-role="listview" class="ui-listview">
 <li data-role="list-divider" role="heading" class="menuleft ui-li ui-li-divider ui-bar-d ui-first-child">Menu</li>
-					<a data-transition="fade" href="#profil"><li data-corners="false" data-shadow="false"  data-wrapperels="div" data-theme="d" class="bnx"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><img class="bora" src="user.png"> Mon Profil</div></div></li></a>
-					<a data-transition="fade" onclick="mescommandes('panier1')" href="#listedecommande"><li data-corners="false" data-shadow="false"  data-wrapperels="div" data-theme="d" class="bnx "><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><img class="bora" src="shopping.png"> Mes Commandes</div></div></li></a>
-					<a data-transition="fade" onclick="affiche11('35')" href="#nouveautes"><li data-corners="false" data-shadow="false"  data-wrapperels="div" data-theme="d" class="bnx"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><img class="bora" src="percentage.png">  Promotions</div></div></li></a>
-					<a data-transition="fade" onclick="affiche11('36')" href="#nouveautes"><li data-corners="false" data-shadow="false"  data-wrapperels="div" data-theme="d" class="bnx"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><img class="bora" src="badge.png"> Nouveautés </div></div></li></a>
-					<a data-transition="fade" href="#Contacteznous"><li data-corners="false" data-shadow="false"  data-wrapperels="div" data-theme="d" class="bnx"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><img class="bora" src="bubble.png"> Contact</div></div></li></a>
-					<a data-transition="fade" href="#apropos"><li data-corners="false" data-shadow="false"  data-wrapperels="div" data-theme="d" class="bnx"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><img class="bora" src="infos.png"> A Propos</div></div></li></a>
-					<a data-transition="fade" href="#condition"><li data-corners="false" data-shadow="false"  data-wrapperels="div" data-theme="d" class="bnx"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><img class="bora" src="tache.png"> Conditions d'utilisation</div></div></li></a>
+					<a data-transition="slidefade" href="#profil"><li data-corners="false" data-shadow="false"  data-wrapperels="div" data-theme="d" class="bnx"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><img class="bora" src="user.png"> Mon Profil</div></div></li></a>
+					<a data-transition="slidefade" onclick="mescommandes('panier1')" href="#listedecommande"><li data-corners="false" data-shadow="false"  data-wrapperels="div" data-theme="d" class="bnx "><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><img class="bora" src="shopping.png"> Mes Commandes</div></div></li></a>
+					<a data-transition="slidefade" onclick="affiche11('35')" href="#nouveautes"><li data-corners="false" data-shadow="false"  data-wrapperels="div" data-theme="d" class="bnx"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><img class="bora" src="percentage.png">  Promotions</div></div></li></a>
+					<a data-transition="slidefade" onclick="affiche11('36')" href="#nouveautes"><li data-corners="false" data-shadow="false"  data-wrapperels="div" data-theme="d" class="bnx"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><img class="bora" src="badge.png"> Nouveautés </div></div></li></a>
+					<a data-transition="slidefade" href="#Contacteznous"><li data-corners="false" data-shadow="false"  data-wrapperels="div" data-theme="d" class="bnx"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><img class="bora" src="bubble.png"> Contact</div></div></li></a>
+					<a data-transition="slidefade" href="#apropos"><li data-corners="false" data-shadow="false"  data-wrapperels="div" data-theme="d" class="bnx"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><img class="bora" src="infos.png"> A Propos</div></div></li></a>
+					<a data-transition="slidefade" href="#condition"><li data-corners="false" data-shadow="false"  data-wrapperels="div" data-theme="d" class="bnx"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><img class="bora" src="tache.png"> Conditions d'utilisation</div></div></li></a>
 				</ul>   
 
 
@@ -558,7 +558,7 @@ Votre Commande a été envoyé, vous allez recevoir une réponse dans quelques i
 	<div style='padding:10px 0px !important;' data-position="fixed" data-role="header">
 	<a href="#left-panel" data-theme="d" data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" src="menu.png"></a>
 		<h1 style="font-family: 'Kaushan Script', cursive !important;font-size:23px;padding:0.35em 0 !important;">La Ville Verte</h1>
-			<a href="#lepanier" onclick="affichepanier()" data-transition="fade" data-theme="d" data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><div id="countpanier1" class="countpanier">0</div><img class="imgbt" src="buy.png"></a>
+			<a href="#lepanier" onclick="affichepanier()" data-transition="slidefade" data-theme="d" data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><div id="countpanier1" class="countpanier">0</div><img class="imgbt" src="buy.png"></a>
 	</div><!-- /header -->
 <!--data-dom-cache="true"-->
 <div id="reda" data-role="content">
@@ -573,9 +573,9 @@ Votre Commande a été envoyé, vous allez recevoir une réponse dans quelques i
 <div data-role="page" id="page2">
 
 	<div  style='padding:10px 0px !important;' data-position="fixed" data-role="header">
-	<a data-transition="fade"  href="#page1" data-theme="d"  data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" style="vertical-align: middle;width: 24px !important;color: white;margin-top: 7px !important;" src="retour.png"> <span style="font-size: 16px;color: white;vertical-align:-5px;">Retour</span></a>
+	<a data-transition="slidefade" data-direction="reverse" href="#page1" data-theme="d"  data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" style="vertical-align: middle;width: 24px !important;color: white;margin-top: 7px !important;" src="retour.png"> <span style="font-size: 16px;color: white;vertical-align:-5px;">Retour</span></a>
 	<h1 style="font-family: 'Kaushan Script', cursive !important;font-size:23px;padding:0.35em 0 !important;">La Ville Verte</h1>
-	<a href="#lepanier" onclick="affichepanier()" data-transition="fade" data-theme="d" data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><div id="countpanier2" class="countpanier">0</div><img class="imgbt" src="buy.png"></a>
+	<a href="#lepanier" onclick="affichepanier()" data-transition="slidefade" data-theme="d" data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><div id="countpanier2" class="countpanier">0</div><img class="imgbt" src="buy.png"></a>
 	
 	</div><!-- /header -->
 
@@ -589,7 +589,7 @@ Votre Commande a été envoyé, vous allez recevoir une réponse dans quelques i
 <div data-role="page" style="background-color:white;" id="profil">
 
 	<div  style='padding:10px 0px !important;' data-position="fixed" data-role="header">
-		<a data-transition="fade"  href="#page1" data-theme="d"  data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" style="vertical-align: middle;width: 24px !important;color: white;margin-top: 7px !important;" src="retour.png"> <span style="font-size: 16px;color: white;vertical-align:-5px;">Retour</span></a>
+		<a data-transition="slidefade" data-direction="reverse" href="#page1" data-theme="d"  data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" style="vertical-align: middle;width: 24px !important;color: white;margin-top: 7px !important;" src="retour.png"> <span style="font-size: 16px;color: white;vertical-align:-5px;">Retour</span></a>
 			<h1 style="font-family: 'Kaushan Script', cursive !important;font-size:23px;padding:0.35em 0 !important;">La Ville Verte</h1>
 	</div><!-- /header -->
 
@@ -609,9 +609,9 @@ Votre Commande a été envoyé, vous allez recevoir une réponse dans quelques i
 <div data-role="page" style="background-color:white;" id="condition">
 
 	<div  style='padding:10px 0px !important;' data-position="fixed" data-role="header">
-		<a data-transition="fade"  href="#page1" data-theme="d"  data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" style="vertical-align: middle;width: 24px !important;color: white;margin-top: 7px !important;" src="retour.png"> <span style="font-size: 16px;color: white;vertical-align:-5px;">Retour</span></a>
+		<a data-transition="slidefade" data-direction="reverse" href="#page1" data-theme="d"  data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" style="vertical-align: middle;width: 24px !important;color: white;margin-top: 7px !important;" src="retour.png"> <span style="font-size: 16px;color: white;vertical-align:-5px;">Retour</span></a>
 			<h1 style="font-family: 'Kaushan Script', cursive !important;font-size:23px;padding:0.35em 0 !important;">La Ville Verte</h1>
-			<a href="#lepanier" onclick="affichepanier()" data-transition="fade" data-theme="d" data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" src="buy.png"></a>
+			<a href="#lepanier" onclick="affichepanier()" data-transition="slidefade" data-theme="d" data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" src="buy.png"></a>
 	
 	</div><!-- /header -->
 
@@ -634,9 +634,9 @@ Les prix figurant dans le site sont des prix TTC en Dh. Nos restaurant partenair
 <!--a propos-->
 <div data-role="page" style="background-color:white;" id="apropos">
 	<div  style='padding:10px 0px !important;' data-position="fixed" data-role="header">
-		<a data-transition="fade"  href="#page1" data-theme="d"  data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" style="vertical-align: middle;width: 24px !important;color: white;margin-top: 7px !important;" src="retour.png"> <span style="font-size: 16px;color: white;vertical-align:-5px;">Retour</span></a>
+		<a data-transition="slidefade" data-direction="reverse" href="#page1" data-theme="d"  data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" style="vertical-align: middle;width: 24px !important;color: white;margin-top: 7px !important;" src="retour.png"> <span style="font-size: 16px;color: white;vertical-align:-5px;">Retour</span></a>
 			<h1 style="font-family: 'Kaushan Script', cursive !important;font-size:23px;padding:0.35em 0 !important;">La Ville Verte</h1>
-			<a href="#lepanier" onclick="affichepanier()" data-transition="fade" data-theme="d" data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" src="buy.png"></a>
+			<a href="#lepanier" onclick="affichepanier()" data-transition="slidefade" data-theme="d" data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" src="buy.png"></a>
 	
 	</div><!-- /header -->
 
@@ -661,9 +661,9 @@ Notre mission est d’être la principale infrastructure de la demande pour tout
 
 <div data-role="page" style="background-color:white;" id="nouveautes">
 	<div  style='padding:10px 0px !important;' data-position="fixed" data-role="header">
-		<a data-transition="fade"  href="#page1" data-theme="d"  data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" style="vertical-align: middle;width: 24px !important;color: white;margin-top: 7px !important;" src="retour.png"> <span style="font-size: 16px;color: white;vertical-align:-5px;">Retour</span></a>
+		<a data-transition="slidefade" data-direction="reverse" href="#page1" data-theme="d"  data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" style="vertical-align: middle;width: 24px !important;color: white;margin-top: 7px !important;" src="retour.png"> <span style="font-size: 16px;color: white;vertical-align:-5px;">Retour</span></a>
 			<h1 style="font-family: 'Kaushan Script', cursive !important;font-size:23px;padding:0.35em 0 !important;">La Ville Verte</h1>
-			<a href="#lepanier" onclick="affichepanier()" data-transition="fade" data-theme="d" data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><div id="countpanier4" class="countpanier">0</div><img class="imgbt" src="buy.png"></a>
+			<a href="#lepanier" onclick="affichepanier()" data-transition="slidefade" data-theme="d" data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><div id="countpanier4" class="countpanier">0</div><img class="imgbt" src="buy.png"></a>
 	
 	</div><!-- /header -->
 <div class="txtpromo" style="font-size:18px;float:left;width:100%;">Nouveautés </div>
@@ -681,9 +681,9 @@ Notre mission est d’être la principale infrastructure de la demande pour tout
 
 <div data-role="page" style="background-color:white;" id="details">
 	<div  style='padding:10px 0px !important;' data-position="fixed" data-role="header">
-		<a data-transition="fade"  href="#page1" data-theme="d"  data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" style="vertical-align: middle;width: 24px !important;color: white;margin-top: 7px !important;" src="retour.png"> <span style="font-size: 16px;color: white;vertical-align:-5px;">Retour</span></a>
+		<a data-transition="slidefade" data-direction="reverse" href="#page1" data-theme="d"  data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" style="vertical-align: middle;width: 24px !important;color: white;margin-top: 7px !important;" src="retour.png"> <span style="font-size: 16px;color: white;vertical-align:-5px;">Retour</span></a>
 			<h1 style="font-family: 'Kaushan Script', cursive !important;font-size:23px;padding:0.35em 0 !important;">La Ville Verte</h1>
-			<a href="#lepanier" onclick="affichepanier()" data-transition="fade" data-theme="d" data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><div id="countpanier5" class="countpanier">0</div><img class="imgbt" src="buy.png"></a>
+			<a href="#lepanier" onclick="affichepanier()" data-transition="slidefade" data-theme="d" data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><div id="countpanier5" class="countpanier">0</div><img class="imgbt" src="buy.png"></a>
 	
 	</div><!-- /header -->
 	<div id="contentpage5" data-dom-cache="true" style="padding:0 !important;font-family:'Exo 2', sans-serif;text-align:justify;" data-role="content">
@@ -702,7 +702,7 @@ Notre mission est d’être la principale infrastructure de la demande pour tout
 <div data-role="page" style="background-color:white;" id="Contacteznous">
 
 	<div  style='padding:10px 0px !important;' data-position="fixed" data-role="header">
-		<a data-transition="fade"  href="#page1" data-theme="d"  data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" style="vertical-align: middle;width: 24px !important;color: white;margin-top: 7px !important;" src="retour.png"> <span style="font-size: 16px;color: white;vertical-align:-5px;">Retour</span></a>
+		<a data-transition="slidefade" data-direction="reverse" href="#page1" data-theme="d"  data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" style="vertical-align: middle;width: 24px !important;color: white;margin-top: 7px !important;" src="retour.png"> <span style="font-size: 16px;color: white;vertical-align:-5px;">Retour</span></a>
 			<h1 style="font-family: 'Kaushan Script', cursive !important;font-size:23px;padding:0.35em 0 !important;">La Ville Verte</h1>
 	</div><!-- /header -->
 
@@ -740,9 +740,9 @@ Notre mission est d’être la principale infrastructure de la demande pour tout
 
 
 	<div  style='padding:10px 0px !important;' data-position="fixed" data-role="header">
-		<a data-transition="fade"  href="#page1" data-theme="d"  data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" style="vertical-align: middle;width: 24px !important;color: white;margin-top: 7px !important;" src="retour.png"> <span style="font-size: 16px;color: white;vertical-align:-5px;">Retour</span></a>
+		<a data-transition="slidefade" data-direction="reverse" href="#page1" data-theme="d"  data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" style="vertical-align: middle;width: 24px !important;color: white;margin-top: 7px !important;" src="retour.png"> <span style="font-size: 16px;color: white;vertical-align:-5px;">Retour</span></a>
 			<h1 style="font-family: 'Kaushan Script', cursive !important;font-size:23px;padding:0.35em 0 !important;">La Ville Verte</h1>
-			<a href="#lepanier" onclick="affichepanier()" data-transition="fade" data-theme="d" data-iconpos="notext" data-shadow="false" class="hidebg ui-link ui-btn-right ui-btn ui-btn-d ui-corner-all" data-iconshadow="false" data-role="button" role="button"><div id="countpanier3" class="countpanier">0</div><img class="imgbt" src="buy.png"></a>
+			<a href="#lepanier" onclick="affichepanier()" data-transition="slidefade" data-theme="d" data-iconpos="notext" data-shadow="false" class="hidebg ui-link ui-btn-right ui-btn ui-btn-d ui-corner-all" data-iconshadow="false" data-role="button" role="button"><div id="countpanier3" class="countpanier">0</div><img class="imgbt" src="buy.png"></a>
 	</div><!-- /header -->
 
 	<div id="contentpage6" style="text-align:left;padding:0 !important;font-family:'Exo 2', sans-serif !important" data-dom-cache="true" data-role="content">
@@ -757,9 +757,9 @@ Notre mission est d’être la principale infrastructure de la demande pour tout
 
 
 	<div  style='padding:10px 0px !important;' data-position="fixed" data-role="header">
-		<a data-transition="fade"  href="#page1" data-theme="d"  data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" style="vertical-align: middle;width: 24px !important;color: white;margin-top: 7px !important;" src="retour.png"> <span style="font-size: 16px;color: white;vertical-align:-5px;">Retour</span></a>
+		<a data-transition="slidefade" data-direction="reverse" href="#page1" data-theme="d"  data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" style="vertical-align: middle;width: 24px !important;color: white;margin-top: 7px !important;" src="retour.png"> <span style="font-size: 16px;color: white;vertical-align:-5px;">Retour</span></a>
 			<h1 style="font-family: 'Kaushan Script', cursive !important;font-size:23px;padding:0.35em 0 !important;">La Ville Verte</h1>
-			<a href="#lepanier" onclick="affichepanier()" data-transition="fade" data-theme="d" data-iconpos="notext" data-shadow="false" class="hidebg ui-link ui-btn-right ui-btn ui-btn-d ui-corner-all" data-iconshadow="false" data-role="button" role="button"><div id="countpanier3" class="countpanier">0</div><img class="imgbt" src="buy.png"></a>
+			<a href="#lepanier" onclick="affichepanier()" data-transition="slidefade" data-theme="d" data-iconpos="notext" data-shadow="false" class="hidebg ui-link ui-btn-right ui-btn ui-btn-d ui-corner-all" data-iconshadow="false" data-role="button" role="button"><div id="countpanier3" class="countpanier">0</div><img class="imgbt" src="buy.png"></a>
 	</div><!-- /header -->
 
 	<div id="listedemescommandes" style="text-align:left;padding:0 !important;font-family:'Exo 2', sans-serif !important" data-dom-cache="true" data-role="content">
